@@ -6,20 +6,17 @@ natural AI is a Python AI (Artificial Intelligence) framework that uses the [skl
 
 # Example of usage
 ```python
-def PCA(values):
-    # Apply PCA requesting all components (no argument)
-    from sklearn.decomposition import PCA
-    mypca = PCA()
-    mypca.fit(values)
-    print ("mypca.explained_variance_ratio_")
-    print(mypca.explained_variance_ratio_)
-    print ("mypca.explained_variance_ratio_.sum()")
-    print (mypca.explained_variance_ratio_.sum())
-    # How many components are required to explain 95% of the variance
-    acumvar = [sum(mypca.explained_variance_ratio_[:i]) for i in range(len(mypca.explained_variance_ratio_))]
-    print(list(zip(range(len(acumvar)), acumvar)))
-    
-natural.PCA(values)
+from naturalAI_standardisation import *
+from naturalAI_PCA import *
+
+standardization = Standardizer("testing.data")
+values, valuesNoLastColums = standardization.getValues()
+
+print ("Standardisation:")
+for l in values:
+    print (l)
+pcaObject = PCA(valuesNoLastColums)
+pcaObject.printAcumvar()
 
 Output:
 mypca.explained_variance_ratio_ [ 0.50 0.25 0.10 0.10 0.05 0.05]
@@ -28,3 +25,19 @@ mypca.explained_variance_ratio_.sum() 1.0
 ```
 
 The examples providen are using the data from the UCI machine learning repository. https://archive.ics.uci.edu/ml/datasets.html
+
+**Licence**
+-------
+
+    naturalAI Copyright (C) 2015 Jordi Corbilla
+
+    This program is free software: you can redistribute it and/or modify it under the terms of the GNU 
+    General Public License as published by the Free Software Foundation, either version 3 of the License,
+    or (at your option) any later version.
+    
+    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even 
+    the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public
+    License for more details.
+    
+    You should have received a copy of the GNU General Public License along with this program. 
+    If not, see http://www.gnu.org/licenses/.
