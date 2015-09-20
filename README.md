@@ -26,3 +26,5 @@ mypca.explained_variance_ratio_ [ 0.50 0.25 0.10 0.10 0.05 0.05]
 mypca.explained_variance_ratio_.sum() 1.0 
 [(0, 0), (1, 0.50), (2, 0.75), (3, 0.80), (4, 0.90), (5, 0.95)]
 ```
+
+The examples providen are using the data from the UCI machine learning repository. https://archive.ics.uci.edu/ml/datasets.html
