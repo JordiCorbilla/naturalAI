@@ -4,6 +4,17 @@ natural AI is a Python AI (Artificial Intelligence) framework that uses the [skl
 
 [![Downloads](https://img.shields.io/badge/downloads-0-blue.svg)]() [![Stable Release](https://img.shields.io/badge/version-1.0-blue.svg)]() [![License](https://img.shields.io/badge/license-GPL-blue.svg)]() [![Python version](https://img.shields.io/badge/python-3.4.2-red.svg)]()
 
+List of libraries required:
+---------------------------
+- numpy
+- matplotlib
+- sklearn
+- random
+- intertools
+- math
+- functools
+- unittest
+
 # Example of usage
 ```python
 from naturalAI_standardisation import *
