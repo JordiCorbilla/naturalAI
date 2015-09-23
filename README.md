@@ -9,6 +9,7 @@ List of libraries required:
 - numpy
 - matplotlib
 - sklearn
+- pyevolve
 - random
 - intertools
 - math
