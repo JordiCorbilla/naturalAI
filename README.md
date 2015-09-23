@@ -40,7 +40,7 @@ The examples providen are using the data from the UCI machine learning repositor
 **Licence**
 -------
 
-    naturalAI Copyright (C) 2015 Jordi Corbilla
+    **naturalAI** Copyright (C) 2015 Jordi Corbilla
 
     This program is free software: you can redistribute it and/or modify it under the terms of the GNU 
     General Public License as published by the Free Software Foundation, either version 3 of the License,
