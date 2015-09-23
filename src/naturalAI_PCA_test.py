@@ -28,12 +28,21 @@
 
 from naturalAI_standardisation import *
 from naturalAI_PCA import *
+import unittest
 
-standardization = Standardizer("test data\\testing.data")
-values, valuesNoLastColums = standardization.getValues()
+class TestPCAStandardization(unittest.TestCase):
 
-print ("Standardisation:")
-for l in values:
-    print (l)
-pcaObject = PCA(valuesNoLastColums)
-pcaObject.printAcumvar()
+    def test_PCA(self):
+        standardization = Standardizer("testing.data")
+        values, valuesNoLastColums = standardization.getValues()
+
+        print ("Standardisation:")
+        for l in values:
+            print (l)
+        pcaObject = PCA(valuesNoLastColums)
+        acumvar = pcaObject.acumvar
+        pcaObject.printAcumvar()
+        self.assertTrue(acumvar[5] > 0.95)
+        
+if __name__ == '__main__':
+    unittest.main()
