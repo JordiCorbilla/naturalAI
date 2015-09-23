@@ -1,6 +1,6 @@
 # naturalAI
 
-natural AI is a Python AI (Artificial Intelligence) framework that uses the [sklearn library](http://scikit-learn.org/stable/) to create natural solutions to work with recommenders, classifiers, clusters, etc. among other interesting functions like PCA (Principal Component Analysis), MDS (Multidimensional Scaling), etc. The library provides examples and wrappers for easy usage  of it.
+natural AI is a Python AI (Artificial Intelligence) framework that uses the [sklearn library](http://scikit-learn.org/stable/) to create natural solutions to work with recommenders, classifiers, clusters, etc. among other interesting functions like PCA (Principal Component Analysis), MDS (Multidimensional Scaling), Genetic Algorithms, etc. The library provides examples and wrappers for easy usage  of it.
 
 [![Downloads](https://img.shields.io/badge/downloads-0-blue.svg)]() [![Stable Release](https://img.shields.io/badge/version-1.0-blue.svg)]() [![License](https://img.shields.io/badge/license-GPL-blue.svg)]() [![Python version](https://img.shields.io/badge/python-3.4.2-red.svg)]()
 
